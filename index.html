@@ -32,6 +32,9 @@
         body {
           font-family: 'Montserrat', sans-serif;
         }
+        .intro-section {
+          margin-top: -100px;
+        }
         .overlay {
           position: absolute;
           top: 0;
@@ -42,6 +45,12 @@
           opacity: 0.1;
           width: 50%;
           background: #fff352; }
+
+          @media only screen and (max-width: 600px) {
+            .intro-section {
+              margin-top: 150;
+            }
+          }
       </style>
   </head>
   <body>
@@ -103,7 +112,7 @@
       <section class="hero shape-1 hero-custom">
         <div class="container">
           <div class="row align-items-center">
-            <div class="col-lg-6" style="margin-top: -150px;">
+            <div class="intro-section col-lg-6">
               <h2 class="hero-heading" style="font-family: 'Playfair Display', serif;">March towards your goal with like minded souls</h2>
               <p class="mt-2 font-weight-light" style="font-size: 16px;margin-left: 5px;">We are an app bringing in like minded people together to accomplish the same goal. 🤩</p>
               <!-- Subscription form-->
@@ -130,7 +139,7 @@
                 <!-- <div data-device="iPhone7" data-orientation="portrait" data-color="black" class="device">
                   <div class="screen"><img src="img/screen.jpg" alt="..." class="img-fluid"></div>
                 </div> -->
-                <div class="screenshot-image" style="margin-top: -100px;z-index: 100;"><img src="img/marchportrait.png" height="700" alt="march screenshot" /></div>
+                <div class="screenshot-image d-none d-lg-block" style="margin-top: -100px;z-index: 100;"><img src="img/marchportrait.png" height="700" alt="march screenshot" /></div>
               <!-- </div> -->
             </div>
           </div>
